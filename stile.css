@@ -172,3 +172,22 @@ footer { max-width:var(--maxw); margin:56px auto 0; padding:24px 16px 40px; disp
 .ex-cap { display:flex; flex-direction:column; gap:2px; padding:13px 16px; }
 .ex-cap b { color:var(--ink); font-size:15px; }
 .ex-cap small { color:var(--muted); font-size:13px; }
+
+/* ---------- menu social ---------- */
+.social { display:flex; gap:9px; align-items:center; }
+.social a { display:inline-flex; align-items:center; justify-content:center; width:38px; height:38px; border-radius:10px;
+  border:1px solid var(--line); color:var(--muted); background:var(--panel2);
+  transition:color .15s, border-color .15s, transform .12s, background .15s; }
+.social a:hover { color:var(--gold); border-color:var(--gold); background:var(--panel); transform:translateY(-2px); }
+.social a svg { width:20px; height:20px; display:block; }
+.social-top { margin-left:4px; }
+.social-top a { width:34px; height:34px; border-radius:9px; }
+.social-top a svg { width:18px; height:18px; }
+@media (max-width: 980px) { .social-top { display:none; } }
+footer .social a { width:34px; height:34px; }
+/* icone nelle card contatti */
+.contacts .ic-social { display:inline-flex; align-items:center; justify-content:center; width:42px; height:42px; border-radius:12px;
+  background:var(--panel2); border:1px solid var(--line); color:var(--gold); margin-bottom:12px; transition:border-color .15s; }
+.contacts .ic-social svg { width:23px; height:23px; display:block; }
+.contacts .card.link:hover .ic-social { border-color:var(--gold); }
+.contacts .wa .ic-social { color:var(--green); }
