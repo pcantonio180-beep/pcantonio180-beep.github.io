@@ -3,86 +3,210 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>White Programming</title>
-<meta name="description" content="Siti web, automazioni e plugin Minecraft su misura. Preventivo gratis, acconto online, prezzo fisso. / Websites, automations and custom Minecraft plugins.">
-<link rel="icon" href="img/logo.png">
+<title>White Programming — Siti, automazioni e software su misura</title>
+<meta name="description" content="Siti per attività, automazioni e plugin Minecraft su misura. Esempio gratis prima di pagare, prezzo fisso deciso prima, saldo solo quando lo vedi funzionare. Napoli, Italia.">
+<link rel="icon" href="img/logo.png?v=2">
+<meta name="theme-color" content="#0e141d">
+<!-- Anteprima quando condividi il link (WhatsApp, Instagram, ecc.) -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="White Programming — Siti e software su misura">
+<meta property="og:description" content="Ti preparo un esempio del tuo sito gratis, prima che tu paghi. Prezzo fisso, niente abbonamenti. Napoli, Italia.">
+<meta property="og:image" content="img/logo.png?v=2">
+<meta name="twitter:card" content="summary">
 <link rel="stylesheet" href="stile.css">
+<script>document.documentElement.classList.add('js');</script>
 </head>
 <body>
 
 <header class="top">
-  <a class="brand" href="#"><img src="img/logo.png" alt="" width="36" height="36"><span>White Programming</span></a>
+  <a class="brand" href="#top"><img src="img/logo.png?v=2" alt="" width="34" height="34"><span>White Programming</span></a>
   <nav>
     <a href="#servizi"><span lang="it">Servizi</span><span lang="en">Services</span></a>
-    <a href="#lavori"><span lang="it">Lavori</span><span lang="en">Work</span></a>
+    <a href="#lavori"><span lang="it">Esempi</span><span lang="en">Work</span></a>
+    <a href="#perche"><span lang="it">Perché noi</span><span lang="en">Why us</span></a>
+    <a href="#prezzi"><span lang="it">Prezzi</span><span lang="en">Pricing</span></a>
     <a href="#pagamento"><span lang="it">Pagamento</span><span lang="en">Payment</span></a>
+    <a href="#faq"><span lang="it">Domande</span><span lang="en">FAQ</span></a>
     <a href="#contatti"><span lang="it">Contatti</span><span lang="en">Contact</span></a>
   </nav>
   <div class="langs"><button data-set="it">IT</button><button data-set="en">EN</button></div>
 </header>
 
-<main>
+<main id="top">
+
 <section class="hero">
+  <div class="hero-glow" aria-hidden="true"></div>
   <p class="tag">&lt;white-programming /&gt;</p>
   <h1>
-    <span lang="it">Software su misura, <em>pagato in sicurezza</em>.</span>
-    <span lang="en">Custom software, <em>paid safely</em>.</span>
+    <span lang="it">Il software che ti serve, <em>fatto su misura</em>.</span>
+    <span lang="en">The software you need, <em>built to measure</em>.</span>
   </h1>
   <p class="sub">
-    <span lang="it">Siti web, automazioni e plugin Minecraft. Preventivo gratis, prezzo fisso deciso prima, acconto online con carta e saldo solo quando vedi il lavoro funzionare.</span>
-    <span lang="en">Websites, automations and Minecraft plugins. Free quote, fixed price agreed upfront, deposit paid online by card and the rest only when you see it working.</span>
+    <span lang="it">Siti per attività, automazioni e plugin Minecraft. Ti preparo un <b>esempio gratis</b> prima che tu paghi, con un <b>prezzo fisso</b> deciso prima: paghi il saldo solo quando lo vedi funzionare.</span>
+    <span lang="en">Business websites, automations and Minecraft plugins. I build you a <b>free example</b> before you pay, at a <b>fixed price</b> agreed upfront: you pay the balance only when you see it working.</span>
   </p>
   <div class="cta">
-    <a class="btn gold" href="#contatti"><span lang="it">Chiedi un preventivo</span><span lang="en">Get a quote</span></a>
-    <a class="btn" href="#pagamento"><span lang="it">Paga l'acconto</span><span lang="en">Pay the deposit</span></a>
+    <a class="btn gold" id="cta-preventivo" href="#contatti"><span lang="it">Chiedi un preventivo gratis</span><span lang="en">Get a free quote</span></a>
+    <a class="btn ghost" href="#lavori"><span lang="it">Guarda gli esempi</span><span lang="en">See the work</span></a>
   </div>
+  <ul class="badges">
+    <li><span lang="it">Esempio gratis</span><span lang="en">Free example</span></li>
+    <li><span lang="it">Prezzo fisso</span><span lang="en">Fixed price</span></li>
+    <li><span lang="it">Niente abbonamenti</span><span lang="en">No subscriptions</span></li>
+    <li><span lang="it">Il codice è tuo</span><span lang="en">You own the code</span></li>
+  </ul>
 </section>
 
-<section id="servizi">
-  <h2><span lang="it">Cosa faccio</span><span lang="en">What I build</span></h2>
+<section id="servizi" class="reveal">
+  <p class="eyebrow"><span lang="it">Cosa faccio</span><span lang="en">What I build</span></p>
+  <h2><span lang="it">Un unico punto per <em>tutto il digitale</em></span><span lang="en">One place for <em>all things digital</em></span></h2>
   <div class="grid4">
     <article class="card"><div class="ic b"></div>
       <h3><span lang="it">Siti per attività</span><span lang="en">Business websites</span></h3>
-      <p><span lang="it">Sito veloce pensato per il telefono, tasti per chiamare, WhatsApp e mappa, scheda Google con orari e foto.</span><span lang="en">Fast mobile-first site with call, WhatsApp and map buttons, plus your Google Business Profile.</span></p></article>
+      <p><span lang="it">Sito veloce pensato per il telefono: tasti per chiamare, WhatsApp e mappa, menù o servizi, orari e la scheda Google con foto e recensioni.</span><span lang="en">Fast mobile-first site: call, WhatsApp and map buttons, menu or services, opening hours and your Google profile with photos and reviews.</span></p></article>
     <article class="card"><div class="ic g"></div>
-      <h3><span lang="it">Automazioni e app</span><span lang="en">Automations &amp; apps</span></h3>
-      <p><span lang="it">Fogli Google che si aggiornano da soli, app per il telefono (anche AppSheet), script Python, riepiloghi via email.</span><span lang="en">Self-updating Google Sheets, phone apps (AppSheet too), Python scripts, email summaries.</span></p></article>
+      <h3><span lang="it">Automazioni &amp; app</span><span lang="en">Automations &amp; apps</span></h3>
+      <p><span lang="it">Fogli Google che si aggiornano da soli, app per il telefono (anche AppSheet), script Python, riepiloghi e promemoria via email.</span><span lang="en">Self-updating Google Sheets, phone apps (AppSheet too), Python scripts, email summaries and reminders.</span></p></article>
     <article class="card"><div class="ic y"></div>
       <h3><span lang="it">Plugin Minecraft</span><span lang="en">Minecraft plugins</span></h3>
-      <p><span lang="it">Plugin su misura per Paper e Velocity: menu, economia, minigiochi, classifiche.</span><span lang="en">Custom plugins for Paper and Velocity: menus, economy, minigames, leaderboards.</span></p></article>
+      <p><span lang="it">Plugin su misura per Paper e Velocity: menu, economia, minigiochi, classifiche, anticheat e moderazione.</span><span lang="en">Custom plugins for Paper and Velocity: menus, economy, minigames, leaderboards, anticheat and moderation.</span></p></article>
     <article class="card"><div class="ic s"></div>
-      <h3><span lang="it">Setup server</span><span lang="en">Server setups</span></h3>
-      <p><span lang="it">Server completi: plugin, permessi, mondi, proxy e ottimizzazione del lag.</span><span lang="en">Complete servers: plugins, ranks, worlds, proxy and lag tuning.</span></p></article>
+      <h3><span lang="it">Bot Discord &amp; server</span><span lang="en">Discord bots &amp; servers</span></h3>
+      <p><span lang="it">Bot Discord su misura e setup di server completi: plugin, permessi, mondi, proxy e ottimizzazione del lag.</span><span lang="en">Custom Discord bots and complete server setups: plugins, ranks, worlds, proxy and lag tuning.</span></p></article>
   </div>
 </section>
 
-<section id="lavori">
-  <h2><span lang="it">Lavori fatti da me</span><span lang="en">Things I built</span></h2>
-  <p class="note"><span lang="it">Progetti miei, funzionanti e in uso: nessun cliente inventato.</span><span lang="en">My own projects, live and in use: no made-up clients.</span></p>
+<section id="lavori" class="reveal">
+  <p class="eyebrow"><span lang="it">Esempi</span><span lang="en">Work</span></p>
+  <h2><span lang="it">Guarda <em>com'è fatto</em></span><span lang="en">See <em>what it looks like</em></span></h2>
+
+  <article class="showcase">
+    <a class="shot" href="esempi/demo-ristorante.html" target="_blank" rel="noopener" aria-label="Apri l'esempio di sito per ristorante">
+      <span class="frame-bar"><i></i><i></i><i></i></span>
+      <img src="img/demo-ristorante.png" alt="Esempio di sito per una trattoria" loading="lazy">
+    </a>
+    <div class="showcase-txt">
+      <span class="pill-live"><span lang="it">Esempio di sito per attività</span><span lang="en">Business site example</span></span>
+      <h3><span lang="it">Sito per ristoranti e trattorie</span><span lang="en">Site for restaurants &amp; trattorias</span></h3>
+      <p><span lang="it">Menù, foto, orari, mappa e i tasti <b>Chiama</b>, <b>Prenota</b> e <b>WhatsApp</b>. Tutto curato, veloce e perfetto sul telefono.</span><span lang="en">Menu, photos, hours, map and <b>Call</b>, <b>Book</b> and <b>WhatsApp</b> buttons. Polished, fast and perfect on mobile.</span></p>
+      <p class="hl"><span lang="it">👉 Preparo un esempio così per la <b>tua</b> attività, <b>gratis</b>: lo vedi prima di decidere.</span><span lang="en">👉 I build one like this for <b>your</b> business, <b>free</b>: you see it before deciding.</span></p>
+      <a class="btn gold" href="#contatti"><span lang="it">Voglio il mio esempio</span><span lang="en">I want my example</span></a>
+    </div>
+  </article>
+
+  <article class="showcase alt">
+    <a class="shot" href="esempi/demo-parrucchiere.html" target="_blank" rel="noopener" aria-label="Apri l'esempio di sito per parrucchiere">
+      <span class="frame-bar"><i></i><i></i><i></i></span>
+      <img src="img/demo-parrucchiere.png" alt="Esempio di sito per un parrucchiere" loading="lazy">
+    </a>
+    <div class="showcase-txt">
+      <span class="pill-live"><span lang="it">Esempio di sito per attività</span><span lang="en">Business site example</span></span>
+      <h3><span lang="it">Sito per parrucchieri e saloni</span><span lang="en">Site for hair salons</span></h3>
+      <p><span lang="it">Servizi con <b>listino</b>, galleria dei lavori, orari, mappa e la prenotazione con un tasto: <b>Chiama</b> o <b>WhatsApp</b>.</span><span lang="en">Services with <b>prices</b>, work gallery, hours, map and one-tap booking: <b>Call</b> or <b>WhatsApp</b>.</span></p>
+      <p class="hl"><span lang="it">Ogni attività ha il suo stile: il sito lo cucio <b>su di te</b>.</span><span lang="en">Every business has its own style: I tailor the site <b>to you</b>.</span></p>
+    </div>
+  </article>
+
+  <p class="eyebrow mt"><span lang="it">Altri esempi pronti</span><span lang="en">More ready examples</span></p>
+  <p class="note"><span lang="it">Esempi veri e cliccabili per le attività più comuni a Napoli. Per la <b>tua</b> categoria preparo l'esempio su misura.</span><span lang="en">Real, clickable examples for the most common local businesses. For <b>your</b> category I build a tailored one.</span></p>
+  <div class="ex-grid">
+    <a class="ex" href="esempi/demo-pizzeria.html" target="_blank" rel="noopener">
+      <span class="ex-shot"><span class="frame-bar"><i></i><i></i><i></i></span><img src="img/demo-pizzeria.png" alt="Esempio di sito per pizzeria" loading="lazy"></span>
+      <span class="ex-cap"><b><span lang="it">Pizzeria &amp; bar</span><span lang="en">Pizzeria &amp; bar</span></b><small><span lang="it">Menù, foto, prenota</span><span lang="en">Menu, photos, booking</span></small></span>
+    </a>
+    <a class="ex" href="esempi/demo-bb.html" target="_blank" rel="noopener">
+      <span class="ex-shot"><span class="frame-bar"><i></i><i></i><i></i></span><img src="img/demo-bb.png" alt="Esempio di sito per B&amp;B" loading="lazy"></span>
+      <span class="ex-cap"><b><span lang="it">B&amp;B &amp; affittacamere</span><span lang="en">B&amp;B &amp; rooms</span></b><small><span lang="it">Camere, servizi, prenota</span><span lang="en">Rooms, services, booking</span></small></span>
+    </a>
+    <a class="ex" href="esempi/demo-palestra.html" target="_blank" rel="noopener">
+      <span class="ex-shot"><span class="frame-bar"><i></i><i></i><i></i></span><img src="img/demo-palestra.png" alt="Esempio di sito per palestra" loading="lazy"></span>
+      <span class="ex-cap"><b><span lang="it">Palestra &amp; personal</span><span lang="en">Gym &amp; trainer</span></b><small><span lang="it">Corsi, abbonamenti</span><span lang="en">Classes, memberships</span></small></span>
+    </a>
+    <a class="ex" href="esempi/demo-estetista.html" target="_blank" rel="noopener">
+      <span class="ex-shot"><span class="frame-bar"><i></i><i></i><i></i></span><img src="img/demo-estetista.png" alt="Esempio di sito per centro estetico" loading="lazy"></span>
+      <span class="ex-cap"><b><span lang="it">Centro estetico</span><span lang="en">Beauty salon</span></b><small><span lang="it">Listino, galleria</span><span lang="en">Price list, gallery</span></small></span>
+    </a>
+    <a class="ex" href="esempi/demo-dentista.html" target="_blank" rel="noopener">
+      <span class="ex-shot"><span class="frame-bar"><i></i><i></i><i></i></span><img src="img/demo-dentista.png" alt="Esempio di sito per studio dentistico" loading="lazy"></span>
+      <span class="ex-cap"><b><span lang="it">Studio dentistico</span><span lang="en">Dental practice</span></b><small><span lang="it">Prestazioni, prima visita</span><span lang="en">Services, first visit</span></small></span>
+    </a>
+  </div>
+
+  <p class="eyebrow mt"><span lang="it">Progetti miei</span><span lang="en">My own projects</span></p>
+  <p class="note"><span lang="it">Progetti veri, funzionanti e in uso: nessun cliente inventato.</span><span lang="en">Real projects, live and in use: no made-up clients.</span></p>
   <div class="grid3">
     <article class="work"><img src="img/whiteshield.png" alt="White Shield" loading="lazy">
       <h3>White Shield</h3>
       <p><span lang="it">La mia rete Minecraft: 7 plugin scritti da me (circa 57.000 righe di Java), hub, arena PvP con duelli classificati, Tycoon e Bingo dietro un proxy Velocity.</span><span lang="en">My Minecraft network: 7 plugins I wrote (about 57,000 lines of Java), hub, PvP arena with ranked duels, Tycoon and Bingo behind a Velocity proxy.</span></p></article>
     <article class="work"><img src="img/mezzala.jpg" alt="Mezzala" loading="lazy">
       <h3>Mezzala</h3>
-      <p><span lang="it">Quiz di calcio sul web (griglia, bingo, top 10) con i dati di Wikidata.</span><span lang="en">Web football quiz (grid, bingo, top 10) built on Wikidata.</span>
+      <p><span lang="it">Quiz di calcio sul web (griglia, bingo, top 10) coi dati di Wikidata.</span><span lang="en">Web football quiz (grid, bingo, top 10) built on Wikidata.</span>
       <a href="https://studio-g.taildbe68a.ts.net/mezzala-kdwexqco5a/" target="_blank" rel="noopener"><span lang="it">Provalo</span><span lang="en">Try it</span> →</a></p></article>
     <article class="work"><img src="img/mister.jpg" alt="Mister" loading="lazy">
       <h3>Mister</h3>
       <p><span lang="it">Gioco di carriera da allenatore con 9.000+ squadre vere, mercato e coppe europee, tutto nel browser.</span><span lang="en">Football manager career game with 9,000+ real clubs, transfers and European cups, all in the browser.</span></p></article>
   </div>
-  <p class="note"><span lang="it">Lavoro con lo sviluppo assistito dall'IA: vado veloce e ogni funzione viene provata prima della consegna.</span><span lang="en">I work with AI-assisted development: fast turnaround, and every feature is tested before delivery.</span></p>
+  <p class="note"><span lang="it">Scrivo e provo ogni funzione con cura: vado veloce, ma te la consegno solo quando funziona davvero.</span><span lang="en">I write and test every feature with care: fast, but delivered only once it truly works.</span></p>
 </section>
 
-<section id="pagamento" class="pay">
-  <h2><span lang="it">Come funziona il pagamento</span><span lang="en">How payment works</span></h2>
+<section id="chi" class="reveal">
+  <p class="eyebrow"><span lang="it">Chi c'è dietro</span><span lang="en">Who's behind it</span></p>
+  <h2><span lang="it">Parli <em>direttamente con me</em></span><span lang="en">You deal <em>directly with me</em></span></h2>
+  <p class="note"><span lang="it">Sono Antonio, di Napoli. White Programming è il mio progetto: quando mi scrivi parli con chi fa davvero il lavoro, non con un call center o un intermediario. Non mostro la faccia — mostro i risultati.</span><span lang="en">I'm Antonio, from Naples. White Programming is my own project: when you message me you talk to the person actually doing the work, not a call center. I don't show my face — I show results.</span></p>
+  <div class="grid3 promesse">
+    <div class="promise"><h3><span lang="it">Parli con me</span><span lang="en">Talk to me directly</span></h3><p><span lang="it">Nessun intermediario: segui il lavoro con la persona che lo fa.</span><span lang="en">No middleman: you follow the work with the person who makes it.</span></p></div>
+    <div class="promise"><h3><span lang="it">Tempi rispettati</span><span lang="en">Deadlines kept</span></h3><p><span lang="it">Ti dico quando è pronto e lo rispetto, con aggiornamenti chiari lungo la strada.</span><span lang="en">I tell you when it'll be ready and I stick to it, with clear updates along the way.</span></p></div>
+    <div class="promise"><h3><span lang="it">Parole semplici</span><span lang="en">Plain words</span></h3><p><span lang="it">Niente termini complicati: ti spiego tutto come si deve, passo passo.</span><span lang="en">No jargon: I explain everything properly, step by step.</span></p></div>
+  </div>
+</section>
+
+<section id="perche" class="reveal">
+  <p class="eyebrow"><span lang="it">Perché White Programming</span><span lang="en">Why White Programming</span></p>
+  <h2><span lang="it">Chiaro, <em>senza sorprese</em></span><span lang="en">Clear, <em>no surprises</em></span></h2>
+  <div class="grid3 promesse">
+    <div class="promise"><h3><span lang="it">Vedi prima di pagare</span><span lang="en">See before you pay</span></h3><p><span lang="it">Ti preparo un esempio del lavoro. Se non ti convince, non spendi niente.</span><span lang="en">I build you an example first. Not convinced? You spend nothing.</span></p></div>
+    <div class="promise"><h3><span lang="it">Prezzo fisso</span><span lang="en">Fixed price</span></h3><p><span lang="it">Deciso prima di iniziare. Niente conti che si allungano.</span><span lang="en">Agreed before we start. No growing bills.</span></p></div>
+    <div class="promise"><h3><span lang="it">Niente abbonamenti</span><span lang="en">No subscriptions</span></h3><p><span lang="it">Paghi una volta per il lavoro. Nessun costo mensile nascosto.</span><span lang="en">You pay once for the work. No hidden monthly fees.</span></p></div>
+    <div class="promise"><h3><span lang="it">Il codice è tuo</span><span lang="en">You own the code</span></h3><p><span lang="it">Alla consegna ricevi file, codice e istruzioni. Resta tutto a te.</span><span lang="en">On delivery you get files, source and instructions. It's all yours.</span></p></div>
+    <div class="promise"><h3><span lang="it">Pagamento sicuro</span><span lang="en">Safe payment</span></h3><p><span lang="it">Acconto con carta su pagina sicura, saldo solo a lavoro visto.</span><span lang="en">Card deposit on a secure page, balance only once you've seen it.</span></p></div>
+    <div class="promise"><h3><span lang="it">Veloce</span><span lang="en">Fast</span></h3><p><span lang="it">Tempi brevi e aggiornamenti chiari, dall'idea alla consegna.</span><span lang="en">Short timelines and clear updates, from idea to delivery.</span></p></div>
+  </div>
+</section>
+
+<section id="prezzi" class="prezzi reveal">
+  <p class="eyebrow"><span lang="it">Prezzi</span><span lang="en">Pricing</span></p>
+  <h2><span lang="it">Prezzi <em>chiari</em>, decisi prima</span><span lang="en">Clear pricing, agreed upfront</span></h2>
+  <p class="note"><span lang="it">Queste sono fasce di partenza. Il preventivo esatto te lo do dopo due righe su cosa ti serve — e l'esempio lo vedi <b>gratis</b> prima di pagare.</span><span lang="en">These are starting ranges. I give you the exact quote after a couple of lines about what you need — and you see the example <b>free</b> before paying.</span></p>
+  <div class="grid3">
+    <article class="card">
+      <h3><span lang="it">Sito vetrina</span><span lang="en">One-page site</span></h3>
+      <span class="price"><span lang="it">da 149€</span><span lang="en">from €149</span></span>
+      <p><span lang="it">Una pagina curata, perfetta sul telefono: tasti chiama, WhatsApp e mappa, servizi o menù, orari e scheda Google.</span><span lang="en">One polished page, perfect on mobile: call, WhatsApp and map buttons, services or menu, hours and Google profile.</span></p>
+    </article>
+    <article class="card">
+      <h3><span lang="it">Sito completo</span><span lang="en">Full site</span></h3>
+      <span class="price"><span lang="it">da 349€</span><span lang="en">from €349</span></span>
+      <p><span lang="it">Più sezioni e pagine: galleria, listino, prenotazioni e una base di ottimizzazione per Google.</span><span lang="en">More sections and pages: gallery, price list, bookings and basic Google optimization.</span></p>
+    </article>
+    <article class="card">
+      <h3><span lang="it">Automazioni, bot e plugin</span><span lang="en">Automations, bots &amp; plugins</span></h3>
+      <span class="price"><span lang="it">su misura <small>da 49€</small></span><span lang="en">custom <small>from €49</small></span></span>
+      <p><span lang="it">Bot Discord, plugin Minecraft, automazioni e app: preventivo su misura in base al lavoro.</span><span lang="en">Discord bots, Minecraft plugins, automations and apps: a custom quote based on the work.</span></p>
+    </article>
+  </div>
+  <p class="note center"><span lang="it">Prezzi indicativi · niente abbonamenti · il codice è tuo.</span><span lang="en">Indicative prices · no subscriptions · you own the code.</span></p>
+</section>
+
+<section id="pagamento" class="pay reveal">
+  <p class="eyebrow"><span lang="it">Pagamento</span><span lang="en">Payment</span></p>
+  <h2><span lang="it">Come funziona</span><span lang="en">How it works</span></h2>
   <ol class="steps">
     <li><b>1</b><div><h3><span lang="it">Preventivo gratis</span><span lang="en">Free quote</span></h3>
       <p><span lang="it">Mi scrivi cosa ti serve, ti rispondo con prezzo fisso e tempi. Niente sorprese dopo.</span><span lang="en">Tell me what you need; I reply with a fixed price and a deadline. No surprises later.</span></p></div></li>
     <li><b>2</b><div><h3><span lang="it">Acconto del 50% online</span><span lang="en">50% deposit online</span></h3>
       <p><span lang="it">Paghi con carta sulla pagina sicura di Stripe. Io non vedo mai i dati della tua carta.</span><span lang="en">Pay by card on Stripe's secure page. I never see your card details.</span></p></div></li>
     <li><b>3</b><div><h3><span lang="it">Lo vedi funzionare</span><span lang="en">You see it working</span></h3>
-      <p><span lang="it">Ti mostro il lavoro in prova. Due giri di modifiche sono compresi.</span><span lang="en">I show you the work in a test version. Two rounds of changes are included.</span></p></div></li>
+      <p><span lang="it">Ti mostro il lavoro in prova. Due giri di modifiche sono compresi.</span><span lang="en">I show you the work in a test version. Two rounds of changes included.</span></p></div></li>
     <li><b>4</b><div><h3><span lang="it">Saldo e consegna</span><span lang="en">Balance &amp; delivery</span></h3>
       <p><span lang="it">Paghi il restante 50% e ricevi tutto: file, codice e istruzioni.</span><span lang="en">Pay the remaining 50% and get everything: files, source code and instructions.</span></p></div></li>
   </ol>
@@ -91,7 +215,7 @@
       <h3><span lang="it">Hai già il preventivo?</span><span lang="en">Already have a quote?</span></h3>
       <p><span lang="it">Paga qui l'acconto o il saldo: inserisci l'importo concordato e il tuo nome.</span><span lang="en">Pay your deposit or balance here: enter the agreed amount and your name.</span></p>
     </div>
-    <a id="paga" class="btn gold big" href="#contatti" data-stripe="">
+    <a id="paga" class="btn gold big" href="#contatti">
       <span lang="it">Paga con carta</span><span lang="en">Pay by card</span>
     </a>
     <p id="paga-nota" class="small">
@@ -102,12 +226,32 @@
   <p class="small center"><a href="termini.html"><span lang="it">Termini e rimborsi</span><span lang="en">Terms &amp; refunds</span></a> · <a href="privacy.html">Privacy</a></p>
 </section>
 
-<section id="contatti">
-  <h2><span lang="it">Contatti</span><span lang="en">Contact</span></h2>
+<section id="faq" class="faq reveal">
+  <p class="eyebrow"><span lang="it">Domande frequenti</span><span lang="en">FAQ</span></p>
+  <h2><span lang="it">Le domande <em>che mi fanno</em></span><span lang="en">The questions <em>I get asked</em></span></h2>
+  <details><summary><span lang="it">Quanto costa un sito?</span><span lang="en">How much is a website?</span></summary>
+    <p><span lang="it">Dipende da cosa ti serve, ma parti da fasce chiare (vedi Prezzi). Prima ti preparo un esempio gratis, poi decidi.</span><span lang="en">It depends on what you need, but you start from clear ranges (see Pricing). I build you a free example first, then you decide.</span></p></details>
+  <details><summary><span lang="it">Quanto tempo ci vuole?</span><span lang="en">How long does it take?</span></summary>
+    <p><span lang="it">Di solito pochi giorni per un sito vetrina. I tempi esatti te li dico insieme al preventivo.</span><span lang="en">Usually a few days for a one-page site. I give you the exact timing together with the quote.</span></p></details>
+  <details><summary><span lang="it">E se non mi piace?</span><span lang="en">What if I don't like it?</span></summary>
+    <p><span lang="it">Non paghi. Ti mostro un esempio prima: se non ti convince, non spendi niente.</span><span lang="en">You don't pay. I show you an example first: if it doesn't convince you, you spend nothing.</span></p></details>
+  <details><summary><span lang="it">Devo fare qualcosa io?</span><span lang="en">Do I need to do anything?</span></summary>
+    <p><span lang="it">Quasi niente: mi mandi foto, orari e due informazioni. Al resto penso io.</span><span lang="en">Almost nothing: you send me photos, hours and a couple of details. I take care of the rest.</span></p></details>
+  <details><summary><span lang="it">Il sito è mio?</span><span lang="en">Is the site mine?</span></summary>
+    <p><span lang="it">Sì. Alla consegna ricevi file, codice e istruzioni: è tutto tuo, senza abbonamenti.</span><span lang="en">Yes. On delivery you get files, source and instructions: it's all yours, no subscriptions.</span></p></details>
+  <details><summary><span lang="it">Come si paga?</span><span lang="en">How do I pay?</span></summary>
+    <p><span lang="it">Acconto del 50% con carta su pagina sicura, saldo solo a lavoro visto.</span><span lang="en">A 50% deposit by card on a secure page, balance only once you've seen the work.</span></p></details>
+</section>
+
+<section id="contatti" class="reveal">
+  <p class="eyebrow"><span lang="it">Contatti</span><span lang="en">Contact</span></p>
+  <h2><span lang="it">Parliamone, <em>è gratis</em></span><span lang="en">Let's talk, <em>it's free</em></span></h2>
+  <p class="note"><span lang="it">Dimmi che attività hai e cosa ti serve: ti rispondo con un'idea e un prezzo. Senza impegno.</span><span lang="en">Tell me about your business and what you need: I'll reply with an idea and a price. No commitment.</span></p>
   <div class="grid3 contacts">
+    <a class="card link wa" id="c-whatsapp" href="#contatti" hidden><h3>WhatsApp</h3><p><span lang="it">Scrivimi su WhatsApp</span><span lang="en">Message me on WhatsApp</span></p></a>
     <a class="card link" href="https://www.instagram.com/white.programming/" target="_blank" rel="noopener"><h3>Instagram</h3><p>@white.programming</p></a>
     <a class="card link" href="https://www.tiktok.com/@white.programming" target="_blank" rel="noopener"><h3>TikTok</h3><p>@white.programming</p></a>
-    <a class="card link" href="mailto:desila130@gmail.com"><h3>Email</h3><p>desila130@gmail.com</p></a>
+    <a class="card link" id="c-email" href="mailto:whiteprogramming2026@gmail.com"><h3>Email</h3><p>whiteprogramming2026@gmail.com</p></a>
   </div>
   <p class="note center"><span lang="it">Antonio · White Programming · Napoli, Italia</span><span lang="en">Antonio · White Programming · Naples, Italy</span></p>
 </section>
@@ -117,13 +261,35 @@
 
 <script src="lingua.js"></script>
 <script>
+/* === CONFIGURAZIONE — cambia solo questi due valori quando li hai === */
+// Il tuo numero WhatsApp in formato internazionale senza + né spazi (es. "393401234567").
+// Lascialo vuoto finché non hai la SIM: il tasto WhatsApp resta nascosto.
+const WHATSAPP = "";
 // Link di pagamento Stripe (Payment Link). Finché è vuoto il tasto porta ai contatti.
 const STRIPE_LINK = "";
-const paga = document.getElementById("paga");
-if (STRIPE_LINK) {
-  paga.href = STRIPE_LINK; paga.target = "_blank"; paga.rel = "noopener";
-  document.getElementById("paga-nota").hidden = true;
-}
+
+(function () {
+  // WhatsApp: mostra il tasto e porta la chat con un messaggio già pronto
+  if (WHATSAPP) {
+    const testo = encodeURIComponent("Ciao! Ho visto il sito di White Programming e vorrei un preventivo.");
+    const url = "https://wa.me/" + WHATSAPP + "?text=" + testo;
+    const card = document.getElementById("c-whatsapp");
+    card.href = url; card.target = "_blank"; card.rel = "noopener"; card.hidden = false;
+    const cta = document.getElementById("cta-preventivo");
+    cta.href = url; cta.target = "_blank"; cta.rel = "noopener";
+  }
+  // Stripe
+  if (STRIPE_LINK) {
+    const paga = document.getElementById("paga");
+    paga.href = STRIPE_LINK; paga.target = "_blank"; paga.rel = "noopener";
+    document.getElementById("paga-nota").hidden = true;
+  }
+  // Animazione in entrata, leggera e senza librerie
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target); } });
+  }, { threshold: 0.12 });
+  document.querySelectorAll(".reveal").forEach(el => io.observe(el));
+})();
 </script>
 </body>
 </html>

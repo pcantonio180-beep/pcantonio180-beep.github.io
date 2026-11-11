@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Trattoria Pappuliamm · Napoli</title>
+<meta name="description" content="Trattoria napoletana nel cuore di Napoli. Cucina casalinga, piatti della tradizione. Prenota un tavolo.">
+<style>
+  :root{
+    --rosso:#b4202a; --rosso-scuro:#8a1820; --crema:#fbf4e6; --carta:#fffdf8;
+    --verde:#3f6b3a; --oro:#c9a24a; --testo:#2a211c; --grigio:#6b5d52; --ombra:0 10px 30px rgba(60,30,20,.12);
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{font-family:'Segoe UI',system-ui,-apple-system,sans-serif;color:var(--testo);background:var(--crema);line-height:1.55;-webkit-font-smoothing:antialiased}
+  img{max-width:100%;display:block}
+  a{color:inherit}
+  .wrap{max-width:900px;margin:0 auto;padding:0 16px}
+
+  /* banner anteprima */
+  .demo{background:#2a211c;color:#ffe9c2;font-size:.78rem;text-align:center;padding:7px 16px;letter-spacing:.2px}
+  .demo b{color:#fff}
+
+  /* barra in alto */
+  header.top{position:sticky;top:0;z-index:20;background:var(--rosso);color:#fff;box-shadow:var(--ombra)}
+  .top .wrap{display:flex;align-items:center;justify-content:space-between;height:58px}
+  .brand{display:flex;align-items:center;gap:10px;font-weight:800;font-size:1.15rem;text-decoration:none;letter-spacing:.3px}
+  .brand .dot{width:30px;height:30px;border-radius:50%;background:var(--oro);display:grid;place-items:center;font-size:1rem}
+  .top nav{display:none;gap:22px}
+  .top nav a{text-decoration:none;font-weight:600;font-size:.95rem;opacity:.95}
+  .call{display:inline-flex;align-items:center;gap:7px;background:#fff;color:var(--rosso);font-weight:800;text-decoration:none;padding:8px 14px;border-radius:999px;font-size:.9rem;white-space:nowrap}
+
+  /* hero */
+  .hero{background:linear-gradient(180deg,var(--rosso),var(--rosso-scuro));color:#fff;text-align:center;padding:52px 16px 60px;position:relative;overflow:hidden}
+  .hero::after{content:"";position:absolute;inset:0;background:radial-gradient(circle at 30% 20%,rgba(255,255,255,.08),transparent 60%);pointer-events:none}
+  .hero .tag{font-size:.8rem;letter-spacing:3px;text-transform:uppercase;color:var(--oro);font-weight:700;margin-bottom:14px}
+  .hero h1{font-size:2.5rem;line-height:1.1;font-weight:800;margin-bottom:14px}
+  .hero p{max-width:540px;margin:0 auto 26px;font-size:1.08rem;opacity:.94}
+  .cta{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+  .btn{display:inline-flex;align-items:center;gap:8px;text-decoration:none;font-weight:800;padding:13px 22px;border-radius:999px;font-size:1rem;transition:transform .08s}
+  .btn:active{transform:scale(.97)}
+  .btn.oro{background:var(--oro);color:#2a211c}
+  .btn.ghost{background:rgba(255,255,255,.12);color:#fff;border:1.5px solid rgba(255,255,255,.5)}
+  .stelle{margin-top:22px;font-size:.95rem;opacity:.95}
+  .stelle b{color:var(--oro)}
+
+  section{padding:46px 0}
+  h2{font-size:1.7rem;color:var(--rosso);text-align:center;margin-bottom:8px;font-weight:800}
+  .sub{text-align:center;color:var(--grigio);margin-bottom:30px}
+
+  /* menu */
+  .menu{background:var(--carta)}
+  .piatti{display:grid;gap:26px}
+  @media(min-width:640px){.piatti{grid-template-columns:1fr 1fr}}
+  .cat h3{font-size:1.15rem;color:var(--verde);border-bottom:2px solid rgba(63,107,58,.25);padding-bottom:7px;margin-bottom:12px;display:flex;align-items:center;gap:8px}
+  .cat ul{list-style:none}
+  .cat li{padding:7px 0;border-bottom:1px dashed #e7dcc6}
+  .cat li span{display:block;font-size:.84rem;color:var(--grigio)}
+  .nota-menu{text-align:center;color:var(--grigio);font-size:.9rem;margin-top:24px;font-style:italic}
+
+  /* info */
+  .info{background:var(--crema)}
+  .cards{display:grid;gap:18px}
+  @media(min-width:640px){.cards{grid-template-columns:1fr 1fr}}
+  .card{background:#fff;border-radius:16px;padding:22px;box-shadow:var(--ombra)}
+  .card h3{color:var(--rosso);font-size:1.1rem;margin-bottom:10px;display:flex;align-items:center;gap:8px}
+  .card p{color:var(--grigio);font-size:.96rem}
+  .card .riga{display:flex;justify-content:space-between;padding:4px 0;font-size:.95rem}
+  .card .riga b{color:var(--testo)}
+  .map-btn{display:inline-flex;align-items:center;gap:8px;margin-top:14px;background:var(--verde);color:#fff;text-decoration:none;font-weight:700;padding:11px 18px;border-radius:999px;font-size:.95rem}
+
+  /* recensioni */
+  .rec{background:var(--rosso);color:#fff;text-align:center}
+  .rec h2{color:#fff}
+  .big{font-size:3.4rem;font-weight:800;color:var(--oro);line-height:1}
+  .rec .sub{color:rgba(255,255,255,.85)}
+  .quote{max-width:560px;margin:22px auto 0;font-size:1.05rem;font-style:italic;opacity:.95}
+
+  /* prenota */
+  .prenota{background:var(--carta);text-align:center}
+  .prenota .btn.oro{margin:6px}
+
+  footer{background:#2a211c;color:#cdbfae;text-align:center;padding:30px 16px;font-size:.88rem}
+  footer b{color:#fff}
+  footer .mini{margin-top:12px;font-size:.78rem;opacity:.7}
+</style>
+</head>
+<body>
+
+<div class="demo">✨ <b>Anteprima</b> — sito di esempio preparato da <b>White Programming</b> per la trattoria. Non è il sito ufficiale.</div>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#"><span class="dot">🍝</span> Pappuliamm</a>
+    <nav>
+      <a href="#menu">Menù</a>
+      <a href="#dove">Dove siamo</a>
+      <a href="#prenota">Prenota</a>
+    </nav>
+    <a class="call" href="tel:+390811963512">📞 Chiama</a>
+  </div>
+</header>
+
+<section class="hero">
+  <p class="tag">Trattoria napoletana</p>
+  <h1>Trattoria Pappuliamm</h1>
+  <p>Cucina casalinga nel cuore di Napoli. I piatti della tradizione, come li faceva nonna, a due passi da Spaccanapoli.</p>
+  <div class="cta">
+    <a class="btn oro" href="#prenota">Prenota un tavolo</a>
+    <a class="btn ghost" href="#menu">Guarda il menù</a>
+  </div>
+  <p class="stelle">⭐ <b>4,7</b> su Google · 192 recensioni</p>
+</section>
+
+<section class="menu" id="menu">
+  <div class="wrap">
+    <h2>Il nostro menù</h2>
+    <p class="sub">Una selezione dei piatti della casa</p>
+    <div class="piatti">
+      <div class="cat">
+        <h3>🍢 Antipasti</h3>
+        <ul>
+          <li>Frittatina di pasta</li>
+          <li>Crocchè di patate</li>
+          <li>Montanara fritta</li>
+          <li>Parmigiana di melanzane</li>
+        </ul>
+      </div>
+      <div class="cat">
+        <h3>🍝 Primi</h3>
+        <ul>
+          <li>Spaghetti a vongole</li>
+          <li>Paccheri al ragù napoletano</li>
+          <li>Genovese della tradizione</li>
+          <li>Pasta e patate con la provola</li>
+        </ul>
+      </div>
+      <div class="cat">
+        <h3>🍖 Secondi</h3>
+        <ul>
+          <li>Polpette al sugo</li>
+          <li>Salsiccia e friarielli</li>
+          <li>Baccalà fritto</li>
+        </ul>
+      </div>
+      <div class="cat">
+        <h3>🍰 Dolci</h3>
+        <ul>
+          <li>Babà</li>
+          <li>Pastiera napoletana</li>
+          <li>Delizia al limone</li>
+        </ul>
+      </div>
+    </div>
+    <p class="nota-menu">Questo è un menù di esempio: il menù vero, con i prezzi, lo mettiamo insieme a voi.</p>
+  </div>
+</section>
+
+<section class="info" id="dove">
+  <div class="wrap">
+    <h2>Dove siamo e orari</h2>
+    <p class="sub">Nel centro storico di Napoli</p>
+    <div class="cards">
+      <div class="card">
+        <h3>📍 Indirizzo</h3>
+        <p>Vico Corrieri 13<br>80132 Napoli (NA)</p>
+        <a class="map-btn" href="https://www.google.com/maps/search/?api=1&query=Trattoria%20Pappuliamm%20Vico%20Corrieri%2013%20Napoli" target="_blank" rel="noopener">🗺️ Apri la mappa</a>
+      </div>
+      <div class="card">
+        <h3>🕒 Orari</h3>
+        <div class="riga"><span>Martedì – Domenica</span><b>12:30 – 15:00</b></div>
+        <div class="riga"><span></span><b>19:30 – 23:00</b></div>
+        <div class="riga"><span>Lunedì</span><b>Chiuso</b></div>
+        <p style="margin-top:10px;font-size:.85rem">Orari di esempio — si aggiornano con i vostri.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="rec">
+  <div class="wrap">
+    <h2>Ci amano su Google</h2>
+    <div class="big">4,7 ★</div>
+    <p class="sub">su 192 recensioni</p>
+    <p class="quote">“Una vera trattoria napoletana: porzioni generose, sapori di casa e prezzi onesti. Si torna.”</p>
+  </div>
+</section>
+
+<section class="prenota" id="prenota">
+  <div class="wrap">
+    <h2>Prenota un tavolo</h2>
+    <p class="sub">Chiamaci, ti rispondiamo subito</p>
+    <a class="btn oro" href="tel:+390811963512">📞 081 1963 3512</a>
+    <a class="btn oro" href="https://www.google.com/maps/search/?api=1&query=Trattoria%20Pappuliamm%20Napoli" target="_blank" rel="noopener">🗺️ Come arrivare</a>
+  </div>
+</section>
+
+<footer>
+  <b>Trattoria Pappuliamm</b> · Vico Corrieri 13, Napoli · 081 1963 3512
+  <div class="mini">Anteprima realizzata da White Programming · pagina di esempio, non è il sito ufficiale della trattoria</div>
+</footer>
+
+</body>
+</html>
