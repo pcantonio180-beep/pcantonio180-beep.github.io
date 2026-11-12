@@ -191,3 +191,28 @@ footer .social a { width:34px; height:34px; }
 .contacts .ic-social svg { width:23px; height:23px; display:block; }
 .contacts .card.link:hover .ic-social { border-color:var(--gold); }
 .contacts .wa .ic-social { color:var(--green); }
+
+/* ---------- pulsante "Richiedi" nelle card servizi ---------- */
+.card { display:flex; flex-direction:column; }
+.card-cta { margin-top:auto; padding-top:14px; color:var(--gold); font-weight:700; font-size:15px; text-decoration:none;
+  align-self:flex-start; transition:color .15s, transform .12s; }
+.card-cta:hover { color:var(--gold2); transform:translateX(2px); }
+
+/* ---------- modulo richiesta ---------- */
+.richiesta { background:linear-gradient(135deg, rgba(34,211,238,.06), rgba(22,31,43,.7));
+  border:1px solid var(--line); border-radius:22px; padding:26px; margin:6px 0 10px; max-width:720px; }
+.richiesta .f-row { display:grid; grid-template-columns:1fr 1fr; gap:16px; }
+.f-field { display:block; margin-bottom:16px; }
+.f-field > span { display:block; font-size:14px; font-weight:600; color:#cdd6e2; margin-bottom:7px; }
+.f-field > span small { font-weight:500; color:var(--muted); }
+.richiesta input, .richiesta textarea { width:100%; background:var(--bg); color:var(--ink); border:1px solid var(--line);
+  border-radius:12px; padding:13px 14px; font:inherit; font-size:15px; transition:border-color .15s, box-shadow .15s; }
+.richiesta input::placeholder, .richiesta textarea::placeholder { color:#6f7c8f; }
+.richiesta input:focus, .richiesta textarea:focus { outline:none; border-color:var(--gold); box-shadow:0 0 0 3px rgba(34,211,238,.15); }
+.richiesta textarea { resize:vertical; min-height:110px; }
+.richiesta .btn { margin-top:4px; cursor:pointer; border:1px solid var(--gold); }
+.req-tag { display:inline-block; font-size:14px; color:var(--muted); background:var(--panel2); border:1px solid var(--line);
+  border-radius:999px; padding:6px 14px; margin:0 0 18px; }
+.req-tag b { color:var(--gold); }
+.req-note { margin-top:14px; }
+@media (max-width: 560px) { .richiesta { padding:20px; } .richiesta .f-row { grid-template-columns:1fr; } }
