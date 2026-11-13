@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://pcantonio180-beep.github.io/sitemap.xml
